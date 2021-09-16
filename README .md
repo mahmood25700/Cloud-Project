@@ -97,5 +97,5 @@ In order to use the playbook, you will need to have an Ansible control node alre
 SSH into the control node and follow the steps below:
 - Copy the filebeat-playbook.yml and metricbeat-playbook.yml files to /etc/ansible.
 - Update the file t/etc/ansible/hosts to include the ip address of the machine under webservers
-- Run the playbook, and navigate to3.21.128.178.5601 to check that the installation worked as expected.
+- Run the playbook, and navigate to 18.221.151.85:5601 to check that the installation worked as expected.
 
