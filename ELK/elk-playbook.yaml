@@ -1,6 +1,7 @@
 ---
   - name: install elk
     hosts: elk
+    remote_user: ubuntu
     become: true
     tasks:
     - name: docker.io
