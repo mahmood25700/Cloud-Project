@@ -37,11 +37,11 @@ The configuration details of each machine may be found below.
 
 | Name          |   Function | IP Address  | Operating System |
 |----------     |  ----------|------------ |------------------|
-| Jump Box      |  Gateway   |172.31.2.40  |  Linux           |
-| Webserver1    |  Server    |172.31.22.10 |  Linux           |
-| Webserver2    |  Server    |172.31.14.229|  Linux           |  
-| Webserver3    |  Server    |172.31.21.65 |  Linux           |
-| ELK server    | Log server |172.31.42.92 |  Linux           |
+| Jump Box      |  Gateway   |10.0.0.21    |  Linux           |
+| Webserver1    |  Server    |10.0.0.125   |  Linux           |
+| Webserver2    |  Server    |10.0.0.18    |  Linux           |  
+| Webserver3    |  Server    |10.0.0.247   |  Linux           |
+| ELK server    | Log server |10.0.0.157   |  Linux           |
 
 ### Access Policies
 
@@ -57,11 +57,11 @@ A summary of the access policies in place can be found in the table below.
 
 | Name      | Publicly Accessible | Allowed IP Addresses |
 |---------- |---------------------|----------------------|
-| Jump Box  |       yes           |   18.221.86.31       |
-| Webserver1|       no            |   172.31.2.40        |
-| Webserver2|       no            |   172.31.2.40        |
-| Webserver3|       no            |   172.31.2.40        |
-| ELK sever |       no            |   172.31.2.40        |
+| Jump Box  |       yes           |   3.143.1.224       |
+| Webserver1|       no            |   10.0.0.21          |
+| Webserver2|       no            |   10.0.0.21          |
+| Webserver3|       no            |   10.0.0.21          |
+| ELK sever |       no            |   10.0.0.21          |
 
 ### Elk Configuration
 
@@ -81,9 +81,9 @@ The following screenshot displays the result of running `docker ps` after succes
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
- Web server1 172.31.22.10
- web server2 172.31.14.229
- Web server3 172.31.21.65
+ Web server1 10.0.0.125
+ web server2 10.0.0.18
+ Web server3 10.0.0.247
 
 We have installed the following Beats on these machines:
  .Filebeat and Metricbeat
@@ -98,7 +98,7 @@ In order to use the playbook, you will need to have an Ansible control node alre
 SSH into the control node and follow the steps below:
 - Copy the filebeat-playbook.yml and metricbeat-playbook.yml files to /etc/ansible.
 - Update the file t/etc/ansible/hosts to include the ip address of the machine under webservers
-- Run the playbook, and navigate to 18.221.151.85:5601/app/kibana to check that the installation worked as expected.
+- Run the playbook, and navigate to 3.142.40.184:5601/app/kibana to check that the installation worked as expected.
 
 ### Bonus
  I use AWS CloudFormation template to create and manage a Virtual Private Cloud (VPC), complete with subnets, NATting, route tables, ElasticIPAddress,InternetGateway, SecurityGroup, then it will Create ec2 instances tagging as jumpbox hosting Docker container and Ansibel, three ec2 instant tagging as webserver and another ec2 instant tagging 
