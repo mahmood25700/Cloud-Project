@@ -20,19 +20,20 @@ This document contains the following details:
 
 ### Description of the Topology
 
-The main purpose of this network is to expose a load-balanced and monitored instance of webserver, the D*mn Vulnerable Web Application.
+. The main purpose of this network is to expose a load-balanced and monitored instance of webserver, the D*mn Vulnerable Web Application.
 
-Load balancing ensures that the application will be highly available, in addition to restricting access to the network.
-- Load balancing will protect from the denial of service attack as it will help to divert the traffic and to distribute the load.
+. Load balancing ensures that the application will be highly available, in addition to restricting access to the network.
+
+. Load balancing will protect from the denial of service attack as it will help to divert the traffic and to distribute the load.
   Moreover, It helps with the intrusion prevention by restricting access to the servers holding the application.
+  
   A jump box provides a controlled access to the servers/VMs holding the applications and helps with the management of these hosts
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the file and system metric.
--Filebeat watches for the changes in the files in the locations that we specify or the log files and then collects and send the data to logstash/elasticsearch.
- Metricbeat collects the metric data from the services and the operating system and sends it to logstash/elasticsearch
+. Filebeat watches for the changes in the files in the locations that we specify or the log files and then collects and send the data to logstash/elasticsearch.
+. Metricbeat collects the metric data from the services and the operating system and sends it to logstash/elasticsearch.
 
 The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
 | Name          |   Function | IP Address  | Operating System |
 |----------     |  ----------|------------ |------------------|
