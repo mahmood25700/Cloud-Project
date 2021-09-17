@@ -2,7 +2,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-![netwok diagram](https://user-images.githubusercontent.com/85577662/133496576-00db5b2b-c3e0-40b6-9654-8ed8dc6bb4c8.png)
+![Network diagram](https://user-images.githubusercontent.com/85577662/133835831-366db891-b4a2-4193-b28b-74e66bf132d7.png)
 
 
 These files have been tested and used to generate a live ELK deployment on AWS. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the yml file may be used to install only certain pieces of it, such as Filebeat.
