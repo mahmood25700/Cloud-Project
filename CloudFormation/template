@@ -312,7 +312,7 @@ Resources:
          Value: Webserver3
       NetworkInterfaces: 
       - NetworkInterfaceId:
-         Ref: ENI2
+         Ref: ENI3
         DeviceIndex: 0
       KeyName: !Ref SSHKey 
 
