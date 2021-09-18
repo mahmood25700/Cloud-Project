@@ -20,18 +20,18 @@ This document contains the following details:
 
 ### Description of the Topology
 
-. The main purpose of this network is to expose a load-balanced and monitored instance of webserver, the D*mn Vulnerable Web Application.
+- The main purpose of this network is to expose a load-balanced and monitored instance of webserver, the D*mn Vulnerable Web Application.
 
-. Load balancing ensures that the application will be highly available, in addition to restricting access to the network.
+- Load balancing ensures that the application will be highly available, in addition to restricting access to the network.
 
-. Load balancing will protect from the denial of service attack as it will help to divert the traffic and to distribute the load.
+- Load balancing will protect from the denial of service attack as it will help to divert the traffic and to distribute the load.
   Moreover, It helps with the intrusion prevention by restricting access to the servers holding the application.
   
   A jump box provides a controlled access to the servers/VMs holding the applications and helps with the management of these hosts
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the file and system metric.
-. Filebeat watches for the changes in the files in the locations that we specify or the log files and then collects and send the data to logstash/elasticsearch.
-. Metricbeat collects the metric data from the services and the operating system and sends it to logstash/elasticsearch.
+- Filebeat watches for the changes in the files in the locations that we specify or the log files and then collects and send the data to logstash/elasticsearch.
+- Metricbeat collects the metric data from the services and the operating system and sends it to logstash/elasticsearch.
 
 The configuration details of each machine may be found below.
 
@@ -66,13 +66,13 @@ A summary of the access policies in place can be found in the table below.
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
- .In case we need to configure more machines,we can just run the ansible playbook instead of going to every machine and configuring individually.
+ -In case we need to configure more machines,we can just run the ansible playbook instead of going to every machine and configuring individually.
   The playbook implements the following tasks:
- .Install docker.io
- .Install PIP
- .Install docker python module
- .Download and Install a Docker elk container
- .run command to increase the memory
+ -Install docker.io
+ -Install PIP
+ -Install docker python module
+ -Download and Install a Docker elk container
+ -run command to increase the memory
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
@@ -86,11 +86,11 @@ This ELK server is configured to monitor the following machines:
  Web server3 10.0.0.247
 
 We have installed the following Beats on these machines:
- .Filebeat and Metricbeat
+ -Filebeat and Metricbeat
 
 These Beats allow us to collect the following information from each machine:
-  .Filebeat watches for the changes in the files in the locations that we specify or the log files and then collects and send the data to logstash/elasticsearch for example the    modifications in a file.
-  . Metricbeat collects the metric data from the services and the operating system and sends it to logstash/elasticsearch such as Apache service
+  -Filebeat watches for the changes in the files in the locations that we specify or the log files and then collects and send the data to logstash/elasticsearch for example the    modifications in a file.
+ -Metricbeat collects the metric data from the services and the operating system and sends it to logstash/elasticsearch such as Apache service
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
