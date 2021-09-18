@@ -101,7 +101,7 @@ SSH into the control node and follow the steps below:
 - Run the playbook, and navigate to 3.142.40.184:5601/app/kibana to check that the installation worked as expected.
 
 ### Bonus
- I use AWS CloudFormation template to create and manage a Virtual Private Cloud (VPC), complete with subnets, NATting, route tables, ElasticIPAddress,InternetGateway, SecurityGroup, then it will Create ec2 instances tagging as jumpbox hosting Docker container and Ansibel, three ec2 instant tagging as webserver and another ec2 instant tagging 
+ I used AWS CloudFormation template to create and manage a Virtual Private Cloud (VPC), complete with subnets, NATting, route tables, ElasticIPAddress,InternetGateway, SecurityGroup, then it will Create ec2 instances tagging as jumpbox hosting Docker container and Ansibel, three ec2 instant tagging as webserver and another ec2 instant tagging 
 as elk server.use CloudFormation allows us to create a "stack" in one step This is faster, repeatable, and more consistent than manually creating our network via the management 
 console or CLI. We can check our template into source control and use it any time we like for any purpose we want. 
   
